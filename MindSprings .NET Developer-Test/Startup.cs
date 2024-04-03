@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MindSprings_.NET_Developer_Test.Models;
+using System.Net.Http;
+using System;
 
 namespace MindSprings_.NET_Developer_Test
 {
@@ -21,6 +23,9 @@ namespace MindSprings_.NET_Developer_Test
         {
             // Add MVC services to the container
             services.AddControllersWithViews();
+
+            // Register HttpClient service
+            services.AddHttpClient();
 
             // Add any other services your application needs here
         }
@@ -54,3 +59,4 @@ namespace MindSprings_.NET_Developer_Test
         }
     }
 }
+

@@ -7,4 +7,8 @@
     <RootNamespace>MindSprings_.NET_Developer_Test</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
 </Project>
